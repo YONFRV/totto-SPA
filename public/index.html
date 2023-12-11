@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/sweetalert2/dist/sweetalert2.min.css">
+    <script src="/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="https://kit.fontawesome.com/b13fb9aca9.js" crossorigin="anonymous"></script>
+    <script src="validation.js"></script>
+    <script src="refresh.js"></script>
+    <script src="model/userData.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="row container-data-contact">
+            <div class="col-12">
+                <div class="col-3"></div>
+                <div class="col-3 "></div>
+                <div class="col-3"></div>
+                <div class="col-3 ">
+                    <a href="">Escríbenos por WhatsApp: 302 2200200 | Servicio al Cliente</a>
+                </div>
+            </div>
+        </div>
+        <div class="container logo-information">
+            <div class="col-6 logo">
+                <a href="/" class="logo-link">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150"
+                        height="50" viewBox="0 0 144 48" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path class="logo-circle1"
+                                    d="M93.43,1.14c-2.43,0-4.41,1.98-4.41,4.41c0,2.43,1.98,4.41,4.41,4.41c2.43,0,4.41-1.98,4.41-4.41C97.85,3.12,95.87,1.14,93.43,1.14z">
+                                </path>
+                                <path class="logo-circle"
+                                    d="M79.63,1.14c-2.43,0-4.41,1.98-4.41,4.41c0,2.43,1.98,4.41,4.41,4.41c2.43,0,4.41-1.98,4.41-4.41C84.04,3.12,82.06,1.14,79.63,1.14z">
+                                </path>
+                            </g>
+                            <g>
+                                <path
+                                    d="M28.7,12.58H8.83c-2.43,0-4.41,1.98-4.41,4.42c0,2.43,1.98,4.41,4.41,4.41h4.09c0.79,0,1.43,0.64,1.43,1.42v19.61 c0,2.43,1.98,4.41,4.41,4.41s4.41-1.98,4.41-4.41V22.84c0-0.78,0.64-1.42,1.43-1.42h4.09c2.43,0,4.41-1.98,4.41-4.41 C33.12,14.56,31.14,12.58,28.7,12.58z M28.7,19.48h-4.09c-1.85,0-3.36,1.5-3.36,3.35v19.61c0,1.37-1.12,2.49-2.49,2.49 s-2.49-1.12-2.49-2.49V22.84c0-1.85-1.51-3.35-3.36-3.35H8.83c-1.37,0-2.49-1.12-2.49-2.49c0-1.37,1.11-2.49,2.49-2.49H28.7 c1.37,0,2.49,1.12,2.49,2.49C31.19,18.37,30.07,19.48,28.7,19.48z M122.44,12.58c-9.45,0-17.14,7.69-17.14,17.14 c0,9.45,7.69,17.14,17.14,17.14c9.45,0,17.14-7.69,17.14-17.14C139.58,20.27,131.89,12.58,122.44,12.58z M122.44,44.93 c-8.39,0-15.21-6.82-15.21-15.21s6.82-15.21,15.21-15.21s15.21,6.82,15.21,15.21S130.83,44.93,122.44,44.93z M122.44,19.19 c-5.81,0-10.54,4.73-10.54,10.54c0,5.81,4.73,10.54,10.54,10.54c5.81,0,10.54-4.73,10.54-10.54 C132.98,23.91,128.25,19.19,122.44,19.19z M122.44,38.33c-4.75,0-8.61-3.86-8.61-8.61s3.86-8.61,8.61-8.61 c4.75,0,8.61,3.86,8.61,8.61S127.19,38.33,122.44,38.33z M100.33,12.58h-27.6c-2.43,0-4.41,1.98-4.41,4.41 c0,2.19,1.97,4.19,4.32,4.4c0.03,0.01,0.06,0.01,0.09,0.01l1.07,0c0.78,0,1.42,0.64,1.42,1.42v19.61c0,2.43,1.98,4.41,4.41,4.41 c2.43,0,4.41-1.98,4.41-4.41V14.51h11.87v4.97h-3.54c-1.85,0-3.36,1.5-3.36,3.35v19.61c0,2.43,1.98,4.41,4.41,4.41 s4.41-1.98,4.41-4.41V21.41h2.49c2.43,0,4.41-1.98,4.41-4.41C104.75,14.56,102.77,12.58,100.33,12.58z M82.12,42.45 c0,1.37-1.12,2.49-2.49,2.49s-2.49-1.12-2.49-2.49V22.83c0-1.85-1.5-3.35-3.35-3.35l-0.86,0c-1.41-0.05-2.69-1.24-2.69-2.49 c0-1.37,1.12-2.49,2.49-2.49h9.39V42.45z M95.92,42.45c0,1.37-1.12,2.49-2.49,2.49c-1.37,0-2.49-1.12-2.49-2.49V22.83 c0-0.78,0.64-1.42,1.43-1.42h3.54V42.45z M100.33,19.48h-2.49v-4.97h2.49c1.37,0,2.49,1.12,2.49,2.49 C102.82,18.37,101.7,19.48,100.33,19.48z M50.62,19.19c-5.81,0-10.54,4.73-10.54,10.54c0,5.81,4.73,10.54,10.54,10.54 c5.81,0,10.54-4.73,10.54-10.54C61.16,23.91,56.43,19.19,50.62,19.19z M50.62,38.33c-4.75,0-8.61-3.86-8.61-8.61 s3.86-8.61,8.61-8.61c4.75,0,8.61,3.86,8.61,8.61S55.37,38.33,50.62,38.33z M50.62,12.58c-9.45,0-17.14,7.69-17.14,17.14 c0,9.45,7.69,17.14,17.14,17.14s17.14-7.69,17.14-17.14C67.76,20.27,60.07,12.58,50.62,12.58z M50.62,44.93 c-8.39,0-15.21-6.82-15.21-15.21s6.82-15.21,15.21-15.21s15.21,6.82,15.21,15.21S59.01,44.93,50.62,44.93z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="col-6 information">
+                <div class="col-6">
+                </div>
+                <div class="col-6">
+                    <div class="col-6">
+                        <a href="" class="order"><img src="img/header/orders.png" alt=""><span>MIS PEDIDOS</span></a>
+                    </div>
+                    <div class="col-6">
+                        <a href="" class="shopping"><img src="img/header/minicartIcon.png" alt=""><span>1</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="row information-promo">
+        <h1>
+            < <span>NUEVA</span> COLECCIÓN DISNEY PETS >
+        </h1>
+    </div>
+    <div class="container information-email" id="information-email">
+        <div class="col-8">
+            <h1>Ingresa tu correo para validar en nuestra base de datos y continuar con el proceso.</h1>
+        </div>
+    </div>
+    <div class="container form-email">
+        <div class="col-7" id="form-validation">
+            <form onsubmit="return validarFormulario();" method="post" class="formValidation" id="formValidation" >
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <div>
+                    <button type="submit">ENVIAR</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-10 form-create-update" id="form-create-update">
+            <form class="formUpdateCreate" id="formUpdateCreate">
+                <div class="cotainer-inputs email">
+                    <label for="email-update-or-cerate"><span>Email</span></label>
+                    <input type="email" id="email-update-or-cerate" name="email-update-or-cerate" required><br>
+                </div>
+
+                <div class="cotainer-inputs">
+                    <label for="document"><span>Cédula/Identificación*</span></label>
+                    <input type="text" id="document" name="document" pattern="[0-9]{1,30}" maxlength="30" title="Por favor, ingrese hasta 30 números" required ><br>
+                </div>
+
+                <div class="cotainer-inputs">
+                    <label for="name"><span>Nombre*</span></label>
+                    <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+"><br>
+                </div>
+
+                <div class="cotainer-inputs">
+                    <label for="surname"><span>Apellido*</span></label>
+                    <input type="text" id="surname" name="surname" required pattern="[A-Za-z\s]+"><br>
+                </div>
+
+                <div class="cotainer-inputs">
+                    <label for="cellphone"><span>Número Móvil*</span></label>
+                    <input type="text" id="cellphone" name="cellphone" pattern="[0-9]{1,20}" maxlength="20" title="Por favor, ingrese hasta 20 números" required><br>
+                </div>
+
+                <div class="select-container">
+                    <label for="department"><span>Departamento*</span></label>
+                    <select id="department" name="department" required>
+                        <option ></option>
+                        <option value="1">Antioquia</option>
+                        <option value="2">Atlántico</option>
+                        <option value="3">Valle del Cauca</option>
+                        <option value="4">Santander</option>
+                        <option value="5">Cundinamarca</option>
+                        <!-- Agrega más opciones según tus necesidades -->
+                    </select><br>
+                </div>
+
+                <div class="select-container">
+                    <label for="city"><span>Ciudad*</span></label>
+                    <select id="city" name="city" required>
+                        <option ></option>
+                        <!-- Ciudades de Antioquia -->
+                        <option value="1">Medellín</option>
+                        <option value="2">Envigado</option>
+                        <!-- Ciudades de Atlántico -->
+                        <option value="3">Barranquilla</option>
+                        <option value="4">Soledad</option>
+                        <!-- Ciudades del Valle del Cauca -->
+                        <option value="5">Cali</option>
+                        <option value="6">Palmira</option>
+                        <!-- Ciudades de Santander -->
+                        <option value="7">Bucaramanga</option>
+                        <option value="8">Floridablanca</option>
+                        <!-- Ciudades de Cundinamarca -->
+                        <option value="9">Bogotá</option>
+                        <option value="10">Chía</option>
+                        <!-- Agrega más opciones según tus necesidades -->
+                    </select><br>
+                </div>
+
+
+              <div class="cotainer-inputs">
+                    <label for="birthday"><span>Fecha de Nacimiento (año/mm/dd)*</span></label>
+                    <input type="text" id="birthday" name="birthday" required pattern="\d{4}/\d{2}/\d{2}" title="Por favor, ingrese una fecha en el formato año/mm/dd"><br>
+                </div>
+                <div class="container-radio">
+                    <label for="he_has_children">¿Tiene hijos?</label>
+                    <div class="he_has_children">
+                        <label for="no_he_has_children">No</label>
+                        <input type="radio" name="he_has_children" id="no_he_has_children" value="0" required>
+                        <label for="si_he_has_children">Si</label>
+                        <input type="radio" name="he_has_children" id="si_he_has_children" value="1" required>
+                    </div>
+    
+                    <label for="gender">Género</label><br>
+                    <div class="container-gender">
+                        <label for="gender_femenino">Femenino</label>
+                        <input type="radio" id="gender_femenino" name="gender" value="F" required>
+                        <label for="gender_masculino">Masculino</label>
+                        <input type="radio" id="gender_masculino" name="gender" value="M" required>
+                    </div>
+                </div>
+
+                <div  class="tyc_update">
+                    <a href="">
+                        <label for="tyc_update">Acepto los tyc para la actualización de datos</label>
+                    </a>
+                    <input type="checkbox" name="tyc_update" id="tyc_update" required>
+                 </div>
+                <div  class="data_treatment">
+                    <a href="">
+                        <label for="data_treatment">Autorizo el tratamiento de mis datos personales</label>
+                    </a>
+                    <input type="checkbox" name="data_treatment" id="data_treatment" required>
+                </div>
+                <div>
+                    <input type="submit" id="input-create" >
+                </div>
+            </form>
+        </div>
+    </div> 
+    <div class="container separate-contaner">
+        <div class="col-10 separate">
+        </div>
+    </div>
+    <div class="container information-contac-general" id="information-contac-general">
+        <h3>¿Necesitas ayuda?</h3>
+        <span>
+            Línea nacional:01 8000 510203 - Bogotá: 390 73 93
+        </span>
+        <br>
+        <span>
+            Email: servicioalcliente@totto.com
+        </span>
+        <br>
+        <span>
+            o escríbenos a la línea de Whatsapp: 302 2200200
+        </span>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="row">
+                <div class="col-2 empty">
+                </div>
+                <div class="col-2 about-us">
+                    <div class="about-us-data">
+                        <a href="">Quiénes somos</a>
+                        <a href="">Línea Ética</a>
+                        <a href="">Aviso de privacidad</a>
+                        <a href="">Talento Totto</a>
+                        <a href="">Sostenobilidad</a>
+                        <a href="">Prensa</a>
+                        <a href="">Negocios empresariales</a>
+                        <a href="">Política de Tratamiento de Datos</a>
+                    </div>
+                </div>
+                <div class="col-2 customer-service">
+                    <div class="customer-service-data">
+                        <a href="">Servicio al Cliente</a>
+                        <a href="">Encuentra tu Tienda</a>
+                        <a href="">Tiendas Totto Pets</a>
+                        <a href="">Promociones vigentes</a>
+                        <a href="">Envios y Entregas</a>
+                        <a href="">Cambios y Devolucionefa</a>
+                        <a href="">Escribenos por WhatsApp</a>
+                        <a href="">Keypago, paga fácil</a>
+                    </div>
+                </div>
+                <div class="col-2 follow-us">
+                    <div class="row">
+                        <h3> Síguenos</h3>
+                    </div>
+                    <div class="row">
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="row">
+                        <img src="img/footer/pay.png" alt="">
+                    </div>
+                </div>
+                <div class="col-2 register-update ">
+                    <h3> ¡Registrate o actualiza tus datos!</h3>
+                    <div class="row">
+                        <p>
+                            Te damos la bienvenida restrando y/o actualizando tus datos, recibe 10%
+                            de descuentos en tu próxima compra redimelo únicamente en nuestra tienda online.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            Y además disfruta 25% de descuebto en tu compra en el mes de cumpleaños
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            "Los descuentos de registro/actualización y cumpleaños no son acumulables.
+                            <span> "Aplica términos y condiciones.</span>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            "Aplica para procdutos sin descuentos o full Price."
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-2 empty">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="createUser.js"></script>
+    <script src="updateInformation.js"></script>
+    <script src="service/creatauserDataForm.js"></script>
+    <script src="service/updateUserDataForm.js"></script>
+    <script src="style/createUserStyle.js"></script>
+</body>
+
+</html>

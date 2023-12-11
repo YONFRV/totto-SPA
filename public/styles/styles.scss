@@ -1,0 +1,586 @@
+body {
+    height: 100vh;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Centra No1", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+}
+
+// Contenedor personalizado
+.my-container {
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+// Fila personalizada
+.my-row {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Columna personalizada
+.my-col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+// Tamaños de columnas específicos
+.col-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+
+.col-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.col-5 {
+    flex: 0 0 41.6666667%;
+    max-width: 41.6666667%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex: 0 0 58.3333333%;
+    max-width: 58.3333333%;
+}
+
+.col-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 83.3333333%;
+    max-width: 83.3333333%;
+}
+
+.col-11 {
+    flex: 0 0 91.6666666%;
+    max-width: 91.6666666%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+// Usa las clases personalizadas
+.container {
+    @extend .my-container;
+}
+
+.row {
+    @extend .my-row;
+}
+
+.col {
+    @extend .my-col;
+}
+
+.row.container-data-contact {
+    margin: 0px;
+}
+
+.row.container-data-contact .col-12 {
+    display: flex;
+}
+
+.row.container-data-contact .col-12 .col-6 {
+    display: flex;
+    justify-items: start;
+}
+
+.row.container-data-contact .col-12 .col-3 a {
+    color: #727272;
+    display: flex;
+    text-align: justify;
+    font-size: 0.8em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact a,
+.contact span {
+    color: #727272;
+    display: flex;
+    align-items: center;
+}
+
+.logo-information {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-circle1 {
+    fill: #FBCD01;
+}
+
+.logo-circle {
+    fill: #F5303E;
+}
+
+.information {
+    display: flex;
+    justify-content: end;
+}
+
+
+.shopping {
+    background-color: #f4f4f4;
+    display: flex;
+    text-align: center;
+    border-radius: 2em;
+    width: 6em;
+}
+
+.shopping span {
+    width: 100%;
+}
+
+.shopping img {
+    height: 1.5em;
+    width: 1.5em;
+    background-color: #ffd424;
+    border-radius: 2em;
+    padding: 5px;
+}
+
+.col-6.information .col-6 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.col-6.information .col-6 .col-6 a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.col-6.information .col-6 .col-6 .order img {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.col-6.information .col-6 .col-6 .order img {
+    width: 1.7em;
+    height: 1.2em;
+}
+
+.col-6.information .col-6 .col-6 .order span {
+    color: #180000;
+    font-size: 0.7em;
+    width: 100%;
+    font-weight: bold;
+
+}
+
+.information-promo {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    margin: 0px;
+}
+
+.information-promo h1 {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+
+.row h1 {
+    font-size: 0.8em;
+    padding: 0px
+}
+
+.row h1 span {
+    color: #FBCD01;
+}
+
+.information-email {
+    display: flex;
+    justify-content: center;
+}
+
+.information-email div h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.form-email {
+    display: flex;
+    justify-content: center;
+}
+
+.form-email .col-7 form input {
+    width: 100%;
+    height: 2em;
+    border: 1px solid #a8a0a0e0;
+}
+
+.form-email .col-7 form div {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.form-email .col-7 form div button {
+    color: #fff !important;
+    background-color: #212529 !important;
+    border-color: #212529 !important;
+    border-radius: 2em;
+    width: 10em;
+    height: 2.5em;
+    font-size: 0.8em;
+    font-weight: bold;
+
+}
+
+
+.separate-contaner {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.separate {
+    border-bottom: 0.5px solid #d6d6d6;
+}
+
+.information-contac-general {
+    text-align: center;
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+}
+
+//Footes
+footer {
+    position: relative;
+    bottom: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.container-footer {
+    padding: 1.4em 1.4em 0.8em 1.4em;
+}
+
+.container-footer .row {
+    margin: 0px;
+}
+
+.container-footer .row .col-2.empty {
+    flex: 0 0 11%;
+}
+
+.container-footer .row .col-2.empty {
+    flex: 0 0 11%;
+}
+
+footer .container-footer .row .col-2.about-us .about-us-data {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+
+footer .container-footer .row .col-2.about-us .about-us-data a {
+    color: white;
+    padding: 3px;
+}
+
+.col-2.customer-service .customer-service-data {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+
+.col-2.customer-service .customer-service-data a {
+    color: white;
+    padding: 3px;
+}
+
+.follow-us .row h3 {
+    margin: 0px !important;
+    letter-spacing: 2px;
+    /* Puedes ajustar el valor según sea necesario */
+    font-size: 1.3em;
+}
+
+
+.follow-us .row a {
+    color: white;
+    padding: 0.5em;
+    margin: 1em 0px 1em 0px;
+}
+
+.col-2.register-update {
+    color: #fff;
+    font-size: 0.55em;
+    margin: 0px;
+    flex: 0 0 28%;
+    width: 100%;
+    max-width: 28%;
+}
+
+.col-2.register-update h3 {
+    font-size: 2em;
+    margin: 0px;
+}
+
+.col-2.register-update .row {
+    padding: 1px;
+}
+
+.col-2.register-update .row p {
+    font-size: 1.3em;
+    margin: 6px;
+}
+
+.col-2.register-update .row p span {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+///
+#form-validation {
+    display: black;
+}
+
+///
+.col-10.form-create-update {
+    display: none;
+}
+
+//Borrar
+/*#information-email {
+    display: none;
+
+}
+
+#form-validation {
+    display: none;
+
+}
+
+#information-contac-general {
+    display: none;
+
+}*/
+
+.form-email {
+    margin: 1.2em 0em 1.2em 0em;
+}
+
+.form-email .col-10 form input {
+    width: 100%;
+    height: 2em;
+    border: 1px solid #a8a0a0e0;
+}
+
+.form-email .col-10 form .container-radio {
+    flex-direction: column;
+    margin-left: 1.2em;
+}
+
+.form-email .col-10 form .container-radio .he_has_children {
+    display: flex;
+    left: 0px;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.form-email .col-10 form .container-radio .he_has_children label {
+    margin: 0px 10px 1em 10px;
+}
+
+.form-email .col-10 form .container-radio .he_has_children input {
+    margin: 0px;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.form-email .col-10 form .container-radio .container-gender {
+    display: flex;
+    left: 0px;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.form-email .col-10 form .container-radio .container-gender label {
+    margin: 0px 10px 1em 10px;
+}
+
+.form-email .col-10 form .container-radio .container-gender input {
+    margin: 0px;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.form-email .col-10 form .tyc_update {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+
+}
+
+.form-email .col-10 form .tyc_update input {
+    width: 3%;
+    height: 1.8em;
+}
+
+.form-email .col-10 form .tyc_update a {
+    text-decoration: underline;
+    color: #000000;
+    display: flex;
+}
+
+.form-email .col-10 form .tyc_update a label {
+    margin: auto;
+}
+
+.form-email .col-10 form .data_treatment {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+}
+
+.form-email .col-10 form .data_treatment input {
+    width: 3%;
+    height: 1.8em;
+}
+
+.form-email .col-10 form .data_treatment a {
+    text-decoration: underline;
+    color: #000000;
+    display: flex;
+}
+
+.form-email .col-10 form .data_treatment a label {
+    margin: auto;
+}
+
+.form-email .col-10 form div {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.form-email .col-10 form div #input-create {
+    color: #fff !important;
+    background-color: #212529 !important;
+    border-color: #212529 !important;
+    border-radius: 2em;
+    width: 10em;
+    height: 2.5em;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.form-email .col-10 form .cotainer-inputs  {
+    display: flex;
+    justify-content: start;
+ }
+
+.form-email .col-10 form .cotainer-inputs label {
+   position: absolute;
+   padding: 8px;
+   color: #97c1d2;
+   font-weight: bold;
+   transition: transform 0.3s ease;
+   font-size: 11px;
+}
+
+.form-email .col-10 form .cotainer-inputs input {
+    border-radius: 2px;
+    height: 2em;
+}
+
+
+.cotainer-inputs:focus-within label {
+    transform: translate(4%,-65%); /* Agrega esto para inicializar la posición del label */
+    color: black;
+  }
+
+.cotainer-inputs:focus-within label span{
+    background-color: #ffffff;
+}
+
+.select-container{
+    width: 100%;
+    background-color: #ffffff;
+    height: 1.8em;
+    justify-content: start !important;
+}
+
+.select-container select{
+    background-color: #ffffff;
+    border: 1px solid #a8a0a0e0;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.select-container label span{
+position: absolute;
+padding: 8px;
+color: #97c1d2;
+font-weight: bold;
+transition: transform 0.3s ease;
+font-size: 11px;
+}
+.form-email .col-10 form .cotainer-inputs.email{
+    pointer-events: none;
+    opacity: 0.6; 
+}
+.form-email .col-10 form .cotainer-inputs.email label span{
+    position: absolute;
+    transform: translate(2%, -134%);
+    background-color: #fff;
+    color: #000000 !important;
+}
