@@ -14,6 +14,7 @@ class userData
     public $gender;
     public $tyc_update;
     public $data_treatment;
+    public $number_updates;
     public $create_at;
     public $update_at;
          // Constructor de la clase

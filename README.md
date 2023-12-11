@@ -66,6 +66,7 @@ User Registration and Validation
         "birthday": "1990-01-01",
         "he_has_children": "0",
         "gender": "F",
+        "number_updates": 0,
         "tyc_update": "on",
         "data_treatment": "on"
     }'
