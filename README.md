@@ -39,7 +39,6 @@ User Registration and Validation
 
 ## For local processes
 - Turn on node service with npm start
-- Press SCSS services npm run watch:scss
 
 ## PHP Microservices
 
